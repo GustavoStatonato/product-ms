@@ -12,8 +12,6 @@ import java.util.List;
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
-    public List<Product> findAllByNameOrDescription(String name, String description);
-
     @Query("SELECT p FROM Product p " +
             "WHERE (:query IS NULL OR LOWER(p.name) LIKE LOWER(CONCAT('%', :query, '%')) " +
             "OR LOWER(p.description) LIKE LOWER(CONCAT('%', :query, '%')))" +
