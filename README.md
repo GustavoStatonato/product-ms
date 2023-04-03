@@ -42,6 +42,6 @@ A collection do Postman para testar as rotas da API está disponível na pasta /
 ## Testes
 Os testes unitários da aplicação foram implementados com JUnit 5 e Mockito e podem ser executados com o seguinte comando:
 
-    ./gradlew jacocoTestCoverageVerification
+    ./gradlew test
 
 A cobertura de testes pode ser obtida através do relatório gerado pelo JaCoCo, que pode ser encontrado em build/reports/jacocoHtml/index.html.
